@@ -1,11 +1,11 @@
-function oneThroughFive() {
+function oneThroughTwenty() {
     let meuRetorno = [];
-    for (let counter = 1; counter <= 5; counter++) {
+    for (let counter = 1; counter <= 20; counter++) {
         meuRetorno.push(counter)
     }
     return meuRetorno;
 }
-console.log(oneThroughFive());
+console.log(oneThroughTwenty());
 
 //call function oneThroughTwenty
 
@@ -54,7 +54,13 @@ console.log(multiplesOfFive())
 //call function multiplesOfFive
 
 function squareNumbers() {
-
+    let quadrado = []
+    for (let i = 0; i <= 100; i++) {
+        if (i % 1 === 0) {
+            quadrado.push(i)
+        }
+    }
+    return quadrado
 }
 console.log(squareNumbers())
 
@@ -112,7 +118,24 @@ console.log(multiplesOfFiveBackwards())
 //call function multiplesOfFiveBackwards
 
 function squareNumbersBackwards() {
-
+    let raiz = []
+    for (let i = 100; i >= 0; i--) {
+        if (i % 1 === 0) {
+            raiz.push(i)
+        }
+    }
+    return raiz
 }
 console.log(squareNumbersBackwards())
     //call function squareNumbersBackwards
+
+
+
+function wordKey(array) {
+    let word = array.split("")
+    for (let i = 0; i > array.length; i++) {
+
+    }
+    return word.join('')
+}
+console.log(wordKey('maio', 'abril', 'dezembro', 'fevereiro'))
